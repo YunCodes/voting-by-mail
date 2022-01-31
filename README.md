@@ -1,2 +1,7 @@
-# voting-by-mail
-Examining if Vote-By-Mail (VBM) is indeed a partisan issue using NC elections data
+# Is Vote-By-Mail A Partisan Matter?: Lessons from linking NC elections data
+
+Throughout the 2020 presidential election, then-President Donald Trump continued his attacks on Vote-By-Mail (VBM). Although the extent of his influence remains unclear, only 30% of Republicans voted by mail despite nationwide polling places closures and the health risk of casting an in-person ballot during the COVID-19 pandemic. In comparison, nearly 60% of Democrats cast a mail-in ballot. Survey studies had found that Republicans were less likely to VBM than Democrats, but they did not consider other factors that might have influenced their preference of voting method.
+
+In order to test whether VBM is indeed a partisan issue and less accepted by Republicans, I used a multiple logistic regression model to estimate the gap in the probability of VBM between Republicans and Democrats, controlling for other factors that influence one’s preference for VBM. I controlled for voter age, race, sex, and distance to a polling place. The data preparation processes involved joining various election datasets – voter registration, voter history, and polling places – geocoding residential and polling location addresses for each voter, and calculating their expected travel distance.
+
+My results showed that: (1) being Republican decreases the probability of VBM, controlling for voter age, race, sex, and distance to a polling place; and (2) that being White has a differential impact on the probability of VBM across the political spectrum. Being White increases the probability to VBM among Democrats, and decreases among Republicans. After applying a defensible missing data imputation technique, this paper will be submitted as part of my PhD application.
